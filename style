@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.content,
+.AboutText,
+.contact-form {
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.AboutText h2 {
+    margin-bottom: 30px;
+}
+
+.banner {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Der Wert wurde von -10 auf -5 geändert, um den Unterstrich näher an den Text zu bringen. */
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 40px;
+    margin-top: 80px;
+    word-wrap: break-word;
+}
+
+.search-bar {
+    position: relative;
+    width: 70%;
+    margin: 20px auto 100px; /* Erhöhung des Wertes für margin-bottom */
+}
+
+.search-box,
+.search-button {
+    box-sizing: border-box;
+    height: 50px;
+    font-size: large;
+}
+
+.search-box {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 0 25px 25px 0;
+    border: 1px solid #000;
+}
+
+.search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 25px 25px 0;
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: x-large;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.search-results {
+    height: auto;
+    min-height: 150px;      /* Minimale Höhe */
+    max-height: 400px;      /* Maximale Höhe */
+    overflow: auto;         /* Erlaubt das Scrollen, wenn der Inhalt den Container übersteigt */
+    flex-direction: column;
+    width: 50%;
+    padding: 15px;          /* Größeres Padding */
+    border: 1px solid #ccc; /* Ein einfacher Rand */
+    background-color: #ffffff;
+    align-items: center;
+}
+
+.search-results a {
+    margin-bottom: 10px;
+}
+
+.search-results p {
+    color: rgb(0, 0, 0);
+    font-size: larger;
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.AboutText {
+    width: 70%;
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+    margin: 0;
+}
+
+.AboutText h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.contact-form input[type="submit"] {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.details-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.details-content h1,
+.details-content p {
+    text-align: center;
+}
+
+#details {
+    display: flex;
+    justify-content: center; /* Zentriert den Inhalt horizontal */
+    align-items: center;     /* Zentriert den Inhalt vertikal */
+    height: 100vh; /* Verwendet 100% der Bildschirmhöhe */
+    flex-direction: column; /* Ordnet Kinder (h1, p) in einer Spalte an */
+    color:#ffffff
+}
+
+#details h1,
+#details p {
+    margin: 20px 0; /* Gibt Abstand oben und unten */
+    color: #ffffff;
+}
+
+#kategorien {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: #ffffff; /* Stellt die Textfarbe auf weiß ein */
+  }
+  
+  /* Da #kategorien-Ansicht der direkte Container der Inhalte ist, wird auch hier flex angewendet */
+  #kategorien-Ansicht {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Behält die Richtung der Spalte bei */
+  }
+  
+  /* Die Liste und Listenelemente könnten zusätzlichen Stil benötigen, abhängig von Ihren Designanforderungen */
+  #categories-list {
+    list-style-type: none; /* Entfernt Bullets von der Liste */
+    padding: 0; /* Entfernt den Standard-Abstand */
+    margin: 0; /* Entfernt den Standard-Abstand */
+  }
+  
+  #categories-list ul {
+    list-style-type: none; /* Entfernt die Aufzählungspunkte */
+    padding: 0; /* Entfernt den linken Abstand */
+  }
+  
+  #categories-list li {
+    margin: 0.5em 0; /* Vertikaler Abstand zwischen den Listenelementen */
+    font-size: 1.2em; /* Erhöht die Schriftgröße; passen Sie diesen Wert nach Bedarf an */
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: #fff;
+}
+
+.email-address,
+.additional-text {
+    /* Entfernen der absoluten Positionierung */
+    margin: 0.5rem;
+}
+
+.email-address a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+@media (min-width: 50em) {
+    .navbar ul li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+
+    footer {
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    .email-address,
+    .additional-text {
+        position: absolute;
+        bottom: 20px;
+        color: #fff;
+    }
+
+    .email-address {
+        left: 20px;
+    }
+
+    .email-address a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .additional-text {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .search-bar {
+        position: relative;
+        width: 50%;
+        margin: 20px auto 100px;
+    }
+
+    .search-box,
+    .search-button {
+        box-sizing: border-box;
+        height: 50px;
+        font-size: large;
+    }
+
+    .search-box {
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 0 25px 25px 0;
+        border: 1px solid #000;
+        font-size: large;
+    }
+
+    .search-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 0 25px 25px 0;
+        border: 1px solid #000;
+        background-color: #000;
+        color: #fff;
+        padding: 10px;
+        cursor: pointer;
+        font-size: x-large;
+    }
+
+    .search-results {
+        width: 50%;
+        height: 200px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        margin-bottom: -30px;
+    }
+}
