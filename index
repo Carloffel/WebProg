@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>search in DummyJson</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <div class="navbar">
+                <ul>
+                    <li><a href="#home-content">Home</a></li>
+                    <li><a href="#AboutText">About Us</a></li>
+                    <li><a href="#contact-form">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main id="startseite" class="hidden">
+        <!-- Hauptseite-Inhalt -->
+        <div id="home-content">
+            <div class="content">
+                <div class="search-results">
+                    <p>
+                        Suchen Sie nach einem Produkt zB. "iPhone", um eine Auswahl an Produkten zu entdecken. Ein Klick auf ein Produkt Ihrer Wahl führt Sie zu einer detaillierten Ansicht, in der Sie alle Informationen finden. Zudem haben Sie die Möglichkeit, durch Anklicken der Kategorie weitere ähnliche Kategorien zu erkunden. 
+                    </p>
+                   <ul id="resultsList"></ul>
+                </div>
+                <h1>SUCHE IN DUMMYJSON</h1>
+                <div class="search-bar">
+                    <input type="text" class="search-box" placeholder="Suche eingeben">
+                    <button class="search-button">Suchen</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="AboutText" id="AboutText">
+                <h2>
+                    ABOUT US
+                </h2>
+                <p>    
+                    Unsere Reise begann an der Dualen Hochschule Baden-Württemberg (DHBW), wo wir das Glück hatten, bei einem bemerkenswerten Lehrer namens Herr Schulmeister-Zimolong in die Welt des Webdesigns und der Webentwicklung eingeführt zu werden. Herr Schulmeister-Zimolong war nicht nur ein engagierter Dozent, sondern auch ein leidenschaftlicher Befürworter kreativer Ideen und innovativer Technologien. In seinen Lehrveranstaltungen zeigte er uns, wie man mit HTML, CSS und JavaScript nicht nur einfache Webseiten erstellt, sondern auch, wie man diesen digitalen Raum mit Spaß und Leidenschaft gestaltet. Er führte uns in die Geheimnisse des Codes ein, lehrte uns, wie man Animationen erstellt, beeindruckende Benutzeroberflächen gestaltet und die Welt des Webs zum Leben erweckt.
+                    Das Beste daran war, dass er uns ermutigte, unsere eigenen Ideen zu entwickeln und umzusetzen. Wir verstanden, dass das World Wide Web nicht nur ein Ort für Informationen ist, sondern auch eine Leinwand für kreative Ausdrücke und digitale Abenteuer. Jetzt, nach dem erstem Semester in Webprogrammierung, haben wir beschlossen, die Leidenschaft und das Wissen, die wir von Herr Schulmeister-Zimolong erhalten haben, in die Praxis umzusetzen. Unsere Website ist unser Spielplatz, auf dem wir die lustigen und faszinierenden Dinge, die wir über die Jahre gelernt haben, nutzen können.
+                    Unsere Website ist nicht nur ein Ort, an dem wir zeigen, was wir können, sondern auch eine Plattform, auf der wir anderen beibringen, wie sie die Magie des Webdesigns und der Webentwicklung selbst erleben können. Unsere Website greift auf die DummyJson-Daten zu, um realistische Beispiele und Übungsmöglichkeiten zu bieten.
+                    Wir laden dich ein, mit uns auf dieser aufregenden Reise zu gehen und die Welt des Webdesigns und der Webentwicklung zu erkunden. Genau wie wir einst von Herr Schulmeister-Zimolong inspiriert wurden, möchten wir auch dich dazu inspirieren, die unendlichen Möglichkeiten des Webs zu entdecken und deine eigenen digitalen Geschichten zu schreiben. Willkommen auf unserer Website und viel Spaß beim Entdecken!
+                </p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="contact-form" id="contact-form">
+                <h2>
+                    CONTACT
+                </h2>
+                <form>
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="email" placeholder="Email">
+                    <textarea name="message" placeholder="Nachricht"></textarea>
+                    <input type="submit" value="Senden">
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <main id="details" class="hidden">
+        <div id="details-ansicht" class="details-content">
+            <!-- Hier werden die Produktdetails angezeigt -->
+        </div>
+    </main>
+
+    <main id="kategorien" class="hidden">
+        <div id="kategorien-Ansicht" class="kategorien-Ansicht">
+            <div id="categories-list"></div>
+        </div>
+    </main>
+    
+
+    <footer>
+        <div class="email-address">
+            <a href="mailto:carlo@koppanyi.de">carlo@koppanyi.de</a>
+        </div>
+        <div class="additional-text">
+            <p>Datenschutz | AGB</p>
+        </div>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>
+
